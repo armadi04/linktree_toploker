@@ -61,7 +61,7 @@ section main a {
 
 section main a.tbl-biru {
 /*   background: #3f72af; */
-  background: linear-gradient(#493d9e, #eb5b00);
+  background: linear-gradient(#eb5b00, #493d9e);
   border-radius: 10px;
   color: #ffffff;
   cursor: pointer;
