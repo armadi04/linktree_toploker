@@ -10,7 +10,7 @@ body {
   font-optical-sizing: auto;
   position: relative;
   /* background-image: url(img/toploker.jpeg); */
-  background-color: #143d60;
+  background-color: #493d9e;
   background-size: cover;
   background-position: center;
 }
@@ -67,7 +67,7 @@ section main a {
 }
 
 section main a.tbl-biru {
-  background: #3f72af;
+  background: #eb5b00;
   border-radius: 10px;
   /* margin: 10px;
     padding: 5px; */
