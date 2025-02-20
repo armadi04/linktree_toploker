@@ -10,7 +10,7 @@ body {
   font-optical-sizing: auto;
   position: relative;
   /* background-color: #143d60; */
-  background-color: #df9755;
+  background: linear-gradient(#833AB4, #E1306C, #FD1D1D, #F77737, #FCAF45);
   background-size: cover;
   background-position: center;
 }
