@@ -6,11 +6,11 @@
 
 body {
   height: 100vh;
-  font-family: "Poppins", serif;
+  font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
   position: relative;
-  /* background-color: #143d60; */
-  background: linear-gradient(#833AB4, #E1306C, #FD1D1D, #F77737, #FCAF45);
+  background-color: #1a0868;
+  /* background: linear-gradient(#833ab4, #fd1d1d); */
   background-size: cover;
   background-position: center;
 }
@@ -61,8 +61,8 @@ section main a {
 }
 
 section main a.tbl-biru {
-/*   background: #3f72af; */
-  background: linear-gradient(#eb5b00, #493d9e);
+  background: #ff6b07;
+  /* background: linear-gradient(#fd1d1d, #833ab4); */
   border-radius: 10px;
   color: #ffffff;
   cursor: pointer;

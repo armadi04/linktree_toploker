@@ -6,10 +6,10 @@
 
 body {
   height: 100vh;
-  font-family: "Poppins", serif;
+  font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
   position: relative;
-  background-color: #143d60;
+  background-color: #1a0868;
   background-size: cover;
   background-position: center;
 }
@@ -43,6 +43,7 @@ section main img {
 section main h2 {
   font-weight: 600;
   color: white;
+  text-align: center;
   text-shadow: 0 0 1px transparent, 0 1px 2px rgba(0, 0, 0, 0.8);
 }
 
@@ -59,7 +60,7 @@ section main a {
 }
 
 section main a.tbl-biru {
-  background: #3f72af;
+  background: #ff6b07;
   border-radius: 10px;
   color: #ffffff;
   cursor: pointer;
