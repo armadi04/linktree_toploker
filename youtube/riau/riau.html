@@ -19,8 +19,122 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="riau.css" />
+    <style>
+      .hamburger-menu {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        cursor: pointer;
+        z-index: 100;
+        background-color: rgba(128, 128, 128, 0.5);
+        padding: 8px 10px;
+        border-radius: 5px;
+      }
+
+      .menu-icon {
+        font-size: 24px;
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .menu-icon.hide {
+        display: none;
+      }
+
+      .dropdown-menu {
+        display: none;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        background-color: rgba(0, 0, 0, 0.8);
+        border-radius: 8px;
+        padding: 10px;
+      }
+
+      .dropdown-menu a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding: 8px 15px;
+        transition: all 0.3s ease;
+      }
+
+      .dropdown-menu a:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+        transform: translateX(5px);
+      }
+
+      .show {
+        display: block;
+      }
+
+      /* Menambahkan media query untuk layar handphone */
+      @media screen and (max-width: 768px) {
+        .hamburger-menu {
+          position: fixed;
+          top: 10px;
+          left: 10px;
+          cursor: pointer;
+          z-index: 100;
+          background-color: rgba(128, 128, 128, 0.5);
+          padding: 8px 10px;
+          border-radius: 5px;
+        }
+
+        .menu-icon {
+          font-size: 24px;
+          color: #ffffff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .menu-icon.hide {
+          display: none;
+        }
+
+        .dropdown-menu {
+          display: none;
+          position: fixed;
+          top: 8px;
+          left: 8px;
+          background-color: rgba(0, 0, 0, 0.8);
+          border-radius: 8px;
+          padding: 8px;
+        }
+
+        .dropdown-menu a {
+          display: block;
+          font-size: 15px;
+          color: white;
+          text-decoration: none;
+          padding: 5px 5px;
+          transition: all 0.3s ease;
+        }
+
+        .dropdown-menu a:hover {
+          background-color: rgba(255, 255, 255, 0.1);
+          transform: translateX(5px);
+        }
+
+        .show {
+          display: block;
+        }
+      }
+    </style>
   </head>
   <body>
+    <div class="hamburger-menu">
+      <i class="fas fa-bars menu-icon"></i>
+      <div class="dropdown-menu">
+        <a href="../index.html">Kembali ke Home</a>
+        <a href="../nama_prov.html">Kembali ke Provinsi</a>
+        <a href="../kota_jabar.html">Kembali ke Kota</a>
+      </div>
+    </div>
+    
     <section>
       <main>
         <img src="../../img/Toploker.com.jpeg" alt="Youtube Riau" />
@@ -63,5 +177,24 @@
         </p>
       </footer>
     </section>
+
+    <script>
+      const hamburgerMenu = document.querySelector(".hamburger-menu");
+      const dropdownMenu = document.querySelector(".dropdown-menu");
+      const menuIcon = document.querySelector(".menu-icon");
+
+      hamburgerMenu.addEventListener("click", () => {
+        dropdownMenu.classList.toggle("show");
+        menuIcon.classList.add("hide");
+      });
+
+      // Menutup menu ketika mengklik di luar menu
+      document.addEventListener("click", (e) => {
+        if (!hamburgerMenu.contains(e.target)) {
+          dropdownMenu.classList.remove("show");
+          menuIcon.classList.remove("hide");
+        }
+      });
+    </script>
   </body>
 </html>
