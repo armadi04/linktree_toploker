@@ -20,6 +20,7 @@ section {
   position: absolute;
   inset: 0;
   overflow-y: auto;
+  padding-bottom: 0;
 }
 
 section main {
@@ -31,6 +32,7 @@ section main {
   max-width: 600px;
   justify-content: center;
   align-items: center;
+  padding-bottom: 30px;
 }
 
 section main img {
@@ -72,6 +74,15 @@ section main a.tbl-biru {
 section main a:hover {
   background-color: white;
   color: #333;
+}
+
+section footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 15px;
 }
 
 section footer a i {

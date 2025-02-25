@@ -20,9 +20,41 @@
     />
     <link rel="stylesheet" href="kota_jabar.css" />
     <style>
+      .navbar {
+        background-color: #1a0868;
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.2rem 1rem;
+        width: 100%;
+        height: 50px;
+        z-index: 100;
+      }
+
+      section {
+        padding-top: 0; /* Menambahkan padding-top agar konten tidak menembus navbar */
+      }
+
+      .logo {
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        order: 2;
+      }
+
+      .logo img {
+        padding: 5px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
       .hamburger-menu {
         position: fixed;
-        top: 20px;
+        top: 5px;
         left: 20px;
         cursor: pointer;
         z-index: 100;
@@ -57,7 +89,7 @@
         display: block;
         color: white;
         text-decoration: none;
-        padding: 8px 15px;
+        padding: 10px 15px;
         transition: all 0.3s ease;
       }
 
@@ -72,14 +104,46 @@
 
       /* Menambahkan media query untuk layar handphone */
       @media screen and (max-width: 768px) {
+        .navbar {
+          background-color: #1a0868;
+          position: fixed;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0.2rem 1rem;
+          width: 100%;
+          height: 45px;
+          z-index: 100;
+        }
+
+        section {
+          padding-top: 0; /* Menambahkan padding-top agar konten tidak menembus navbar */
+        }
+
+        .logo {
+          position: relative;
+          display: flex;
+          align-items: center;
+          margin-left: auto;
+          order: 2;
+        }
+
+        .logo img {
+          padding: 5px;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+
         .hamburger-menu {
           position: fixed;
-          top: 10px;
+          top: 6px;
           left: 10px;
           cursor: pointer;
           z-index: 100;
           background-color: rgba(128, 128, 128, 0.5);
-          padding: 8px 10px;
+          padding: 4px 6px;
           border-radius: 5px;
         }
 
@@ -102,7 +166,7 @@
           left: 8px;
           background-color: rgba(0, 0, 0, 0.8);
           border-radius: 8px;
-          padding: 8px;
+          padding: 10px;
         }
 
         .dropdown-menu a {
@@ -110,7 +174,7 @@
           font-size: 15px;
           color: white;
           text-decoration: none;
-          padding: 5px 5px;
+          padding: 10px 10px;
           transition: all 0.3s ease;
         }
 
@@ -126,14 +190,19 @@
     </style>
   </head>
   <body>
-    <div class="hamburger-menu">
-      <i class="fas fa-bars menu-icon"></i>
-      <div class="dropdown-menu">
-        <a href="../../index.html">Home</a>
-        <a href="../nama_prov.html">Daftar Provinsi</a>
+    <div class="navbar">
+      <div class="hamburger-menu">
+        <i class="fas fa-bars menu-icon"></i>
+        <div class="dropdown-menu">
+          <a href="../../index.html">Home</a>
+          <a href="../nama_prov.html">Daftar Provinsi</a>
+        </div>
+      </div>
+      <div class="logo">
+        <img src="../../img/Toploker.com.jpeg" alt="Toploker.com" />
       </div>
     </div>
-    
+
     <section>
       <main>
         <img src="../../img/Toploker.com.jpeg" alt="Telegram Jabar" />
