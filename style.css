@@ -304,7 +304,7 @@ section.menu-active {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 60px;
+    /* padding-bottom: 60px; */
     width: 100%;
   }
 
