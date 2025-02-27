@@ -36,11 +36,31 @@
         padding-top: 0; /* Menambahkan padding-top agar konten tidak menembus navbar */
       }
 
+      section main {
+        display: flex;
+        padding-bottom: 30px;
+      }
+
+      section footer {
+        padding-bottom: 30px;
+      }
+
+      .menu {
+        display: flex;
+        font-family: "Open Sans", sans-serif;
+        color: white;
+        font-weight: 600;
+        font-size: 1em;
+        padding: 8px;
+        margin-left: 40px;
+        text-shadow: 0 0 1px transparent, 0 1px 2px rgba(0, 0, 0, 0.8);
+      }
+
       .logo {
         position: relative;
         display: flex;
         align-items: center;
-        margin-left: auto;
+        margin-right: 20px;
         order: 2;
       }
 
@@ -78,8 +98,8 @@
       .dropdown-menu {
         display: none;
         position: fixed;
-        top: 20px;
-        left: 20px;
+        top: 40px;
+        left: 40px;
         background-color: rgba(0, 0, 0, 0.8);
         border-radius: 8px;
         padding: 10px;
@@ -120,16 +140,35 @@
           padding-top: 0; /* Menambahkan padding-top agar konten tidak menembus navbar */
         }
 
+        section footer {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding-bottom: 60px;
+          width: 100%;
+        }
+
+        .menu {
+          display: flex;
+          font-family: "Open Sans", sans-serif;
+          color: white;
+          font-weight: 600;
+          font-size: 1em;
+          padding: 8px;
+          margin-left: 25px;
+          text-shadow: 0 0 1px transparent, 0 1px 2px rgba(0, 0, 0, 0.8);
+        }
+
         .logo {
           position: relative;
           display: flex;
           align-items: center;
-          margin-left: auto;
+          margin-right: 20px;
           order: 2;
         }
 
         .logo img {
-          padding: 5px;
+          padding: 2px;
           width: 40px;
           height: 40px;
           border-radius: 50%;
@@ -162,11 +201,11 @@
         .dropdown-menu {
           display: none;
           position: fixed;
-          top: 8px;
-          left: 8px;
+          top: 40px;
+          left: 30px;
           background-color: rgba(0, 0, 0, 0.8);
           border-radius: 8px;
-          padding: 8px;
+          padding: 10px;
         }
 
         .dropdown-menu a {
@@ -174,7 +213,7 @@
           font-size: 15px;
           color: white;
           text-decoration: none;
-          padding: 5px 5px;
+          padding: 10px 10px;
           transition: all 0.3s ease;
         }
 
@@ -191,8 +230,11 @@
   </head>
   <body>
     <div class="navbar">
-      <div class="hamburger-menu">
-        <i class="fas fa-bars menu-icon"></i>
+      <div class="menu-container">
+        <div class="menu">MENU</div>
+        <div class="hamburger-menu">
+          <i class="fas fa-bars menu-icon"></i>
+        </div>
         <div class="dropdown-menu">
           <a href="../../index.html">Home</a>
           <a href="../nama_prov.html">Daftar Provinsi</a>
@@ -207,123 +249,238 @@
       <main>
         <img src="../../img/Toploker.com.jpeg" alt="" />
         <h2>Link Akun Instagram wilayah Kalimantan</h2>
-        <a href="https://instagram.com/lokerkalbar.top" class="tbl-biru"
+        <a
+          href="https://instagram.com/lokerkalbar.top"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-instagram"></i>Kalbar</a
         >
-        <a href="https://instagram.com/lokersingkawang.top" class="tbl-biru"
+        <a
+          href="https://instagram.com/lokersingkawang.top"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-instagram"></i>Singkawang</a
         >
-        <a href="https://instagram.com/lokersekadau.top" class="tbl-biru"
+        <a
+          href="https://instagram.com/lokersekadau.top"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-instagram"></i>Sekadau</a
         >
-        <a href="https://instagram.com/lokerputussibau.top" class="tbl-biru"
+        <a
+          href="https://instagram.com/lokerputussibau.top"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-instagram"></i>Putussibau</a
         >
-        <a href="https://instagram.com/lokersambas.top" class="tbl-biru"
+        <a
+          href="https://instagram.com/lokersambas.top"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-instagram"></i>Sambas</a
         >
-        <a href="https://instagram.com/lokermempawah.top" class="tbl-biru"
+        <a
+          href="https://instagram.com/lokermempawah.top"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-instagram"></i>Mempawah</a
         >
-        <a href="https://instagram.com/lokermelawipinoh.top" class="tbl-biru"
+        <a
+          href="https://instagram.com/lokermelawipinoh.top"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-instagram"></i>Melawi</a
         >
-        <a href="https://instagram.com/lokerkayongutara.top" class="tbl-biru"
+        <a
+          href="https://instagram.com/lokerkayongutara.top"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-instagram"></i>Kayong Utara</a
         >
-        <a href="https://instagram.com/lokersanggau.top" class="tbl-biru"
+        <a
+          href="https://instagram.com/lokersanggau.top"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-instagram"></i>Sanggau</a
         >
-        <a href="https://instagram.com/lokerketapang.top" class="tbl-biru"
+        <a
+          href="https://instagram.com/lokerketapang.top"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-instagram"></i>Ketapang</a
         >
-        <a href="https://instagram.com/lokerlandak.top" class="tbl-biru"
+        <a
+          href="https://instagram.com/lokerlandak.top"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-instagram"></i>Landak</a
         >
-        <a href="https://instagram.com/lokersintang.top" class="tbl-biru"
+        <a
+          href="https://instagram.com/lokersintang.top"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-instagram"></i>Sintang</a
         >
-        <a href="https://instagram.com/lokerpontianak.top" class="tbl-biru"
+        <a
+          href="https://instagram.com/lokerpontianak.top"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-instagram"></i>Pontianak</a
         >
-        <a href="https://instagram.com/lokerbengkayang.top" class="tbl-biru"
+        <a
+          href="https://instagram.com/lokerbengkayang.top"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-instagram"></i>Bengkayang</a
         >
-        <a href="https://instagram.com/lokerkalteng.top" class="tbl-biru"
+        <a
+          href="https://instagram.com/lokerkalteng.top"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-instagram"></i>Kalteng</a
         >
-        <a href="https://instagram.com/lokerpalangkaraya.top" class="tbl-biru"
+        <a
+          href="https://instagram.com/lokerpalangkaraya.top"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-instagram"></i>Palangkaraya</a
         >
-        <a href="https://instagram.com/lokerkapuass.top" class="tbl-biru"
+        <a
+          href="https://instagram.com/lokerkapuass.top"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-instagram"></i>Kapuas</a
         >
-        <a href="https://instagram.com/lokerpbun.top" class="tbl-biru"
+        <a
+          href="https://instagram.com/lokerpbun.top"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-instagram"></i>Pangkalan Bun</a
         >
-        <a href="https://instagram.com/lokersampit.top" class="tbl-biru"
+        <a
+          href="https://instagram.com/lokersampit.top"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-instagram"></i>Sampit</a
         >
-        <a href="https://instagram.com/lokerkaltara.top" class="tbl-biru"
+        <a
+          href="https://instagram.com/lokerkaltara.top"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-instagram"></i>Kalimantan Utara</a
         >
-        <a href="https://instagram.com/lokertarakan.top" class="tbl-biru"
+        <a
+          href="https://instagram.com/lokertarakan.top"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-instagram"></i>Tarakan</a
         >
-        <a href="https://instagram.com/lokerkaltim.top" class="tbl-biru"
+        <a
+          href="https://instagram.com/lokerkaltim.top"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-instagram"></i>Kaltim</a
         >
-        <a href="https://instagram.com/lokerbalikpapan.top" class="tbl-biru"
+        <a
+          href="https://instagram.com/lokerbalikpapan.top"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-instagram"></i>Balik Papan</a
         >
-        <a href="https://instagram.com/lokersamarinda.top" class="tbl-biru"
+        <a
+          href="https://instagram.com/lokersamarinda.top"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-instagram"></i>Samarinda</a
         >
-        <a href="https://instagram.com/lokerbontang.top" class="tbl-biru"
+        <a
+          href="https://instagram.com/lokerbontang.top"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-instagram"></i>Bontang</a
         >
-        <a href="https://instagram.com/lokerberau.top" class="tbl-biru"
+        <a
+          href="https://instagram.com/lokerberau.top"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-instagram"></i>Berau</a
         >
-        <a href="https://instagram.com/lokersangatta.top" class="tbl-biru"
+        <a
+          href="https://instagram.com/lokersangatta.top"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-instagram"></i>Kutai</a
         >
-        <a href="https://instagram.com/lokerpaserid.top" class="tbl-biru"
+        <a
+          href="https://instagram.com/lokerpaserid.top"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-instagram"></i>Paser</a
         >
-        <a href="https://instagram.com/lokermahakamulu.top" class="tbl-biru"
+        <a
+          href="https://instagram.com/lokermahakamulu.top"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-instagram"></i>Mahakam Ulu</a
         >
         <a
           href="https://instagram.com/lokerkalimantanselatan.top"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-instagram"></i>Kalsel</a
         >
-        <a href="https://instagram.com/lokerbanjarbaru.top" class="tbl-biru"
+        <a
+          href="https://instagram.com/lokerbanjarbaru.top"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-instagram"></i>Banjarbaru</a
         >
-        <a href="https://instagram.com/lokerbanjarmasin.top" class="tbl-biru"
+        <a
+          href="https://instagram.com/lokerbanjarmasin.top"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-instagram"></i>Banjarmasin</a
         >
-        <a href="https://instagram.com/lokerbarabai.top" class="tbl-biru"
+        <a
+          href="https://instagram.com/lokerbarabai.top"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-instagram"></i>Barabai</a
         >
-        <a href="https://instagram.com/lokerkotabaru.top.id" class="tbl-biru"
+        <a
+          href="https://instagram.com/lokerkotabaru.top.id"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-instagram"></i>Kota Baru</a
         >
-        <a href="https://instagram.com/lokeramuntai.top" class="tbl-biru"
+        <a
+          href="https://instagram.com/lokeramuntai.top"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-instagram"></i>Amuntai</a
         >
-        <a href="https://instagram.com/lokertabalong.top" class="tbl-biru"
+        <a
+          href="https://instagram.com/lokertabalong.top"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-instagram"></i>Tabalong</a
         >
-        <a href="https://instagram.com/lokertanahbumbu.top" class="tbl-biru"
+        <a
+          href="https://instagram.com/lokertanahbumbu.top"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-instagram"></i>Tanah Bumbu</a
         >
-        <a href="https://instagram.com/lokertala.top" class="tbl-biru"
+        <a
+          href="https://instagram.com/lokertala.top"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-instagram"></i>Tanah Laut</a
         >
-        <a href="https://instagram.com/lokerbalangan.top" class="tbl-biru"
+        <a
+          href="https://instagram.com/lokerbalangan.top"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-instagram"></i>Balangan</a
         >
       </main>

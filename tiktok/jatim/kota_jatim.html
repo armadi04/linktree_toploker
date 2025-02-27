@@ -35,11 +35,31 @@
         padding-top: 0; /* Menambahkan padding-top agar konten tidak menembus navbar */
       }
 
+      section main {
+        display: flex;
+        padding-bottom: 30px;
+      }
+
+      section footer {
+        padding-bottom: 30px;
+      }
+
+      .menu {
+        display: flex;
+        font-family: "Open Sans", sans-serif;
+        color: white;
+        font-weight: 600;
+        font-size: 1em;
+        padding: 8px;
+        margin-left: 40px;
+        text-shadow: 0 0 1px transparent, 0 1px 2px rgba(0, 0, 0, 0.8);
+      }
+
       .logo {
         position: relative;
         display: flex;
         align-items: center;
-        margin-left: auto;
+        margin-right: 20px;
         order: 2;
       }
 
@@ -77,8 +97,8 @@
       .dropdown-menu {
         display: none;
         position: fixed;
-        top: 20px;
-        left: 20px;
+        top: 40px;
+        left: 40px;
         background-color: rgba(0, 0, 0, 0.8);
         border-radius: 8px;
         padding: 10px;
@@ -119,16 +139,35 @@
           padding-top: 0; /* Menambahkan padding-top agar konten tidak menembus navbar */
         }
 
+        section footer {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding-bottom: 60px;
+          width: 100%;
+        }
+
+        .menu {
+          display: flex;
+          font-family: "Open Sans", sans-serif;
+          color: white;
+          font-weight: 600;
+          font-size: 1em;
+          padding: 8px;
+          margin-left: 25px;
+          text-shadow: 0 0 1px transparent, 0 1px 2px rgba(0, 0, 0, 0.8);
+        }
+
         .logo {
           position: relative;
           display: flex;
           align-items: center;
-          margin-left: auto;
+          margin-right: 20px;
           order: 2;
         }
 
         .logo img {
-          padding: 5px;
+          padding: 2px;
           width: 40px;
           height: 40px;
           border-radius: 50%;
@@ -161,8 +200,8 @@
         .dropdown-menu {
           display: none;
           position: fixed;
-          top: 8px;
-          left: 8px;
+          top: 40px;
+          left: 30px;
           background-color: rgba(0, 0, 0, 0.8);
           border-radius: 8px;
           padding: 10px;
@@ -190,8 +229,11 @@
   </head>
   <body>
     <div class="navbar">
-      <div class="hamburger-menu">
-        <i class="fas fa-bars menu-icon"></i>
+      <div class="menu-container">
+        <div class="menu">MENU</div>
+        <div class="hamburger-menu">
+          <i class="fas fa-bars menu-icon"></i>
+        </div>
         <div class="dropdown-menu">
           <a href="../../index.html">Home</a>
           <a href="../nama_prov.html">Daftar Provinsi</a>
@@ -206,81 +248,142 @@
       <main>
         <img src="../../img/Toploker.com.jpeg" alt="Tiktok Jatim" />
         <h2>Link akun Tiktok wilayah Jawa Timur</h2>
-        <a href="https://www.tiktok.com/@lokerbanyuwangitopp" class="tbl-biru"
+        <a
+          href="https://www.tiktok.com/@lokerbanyuwangitopp"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-tiktok"></i>Banyuwangi</a
         >
-        <a href="https://www.tiktok.com/@lowkerbojonegoro.top" class="tbl-biru"
+        <a
+          href="https://www.tiktok.com/@lowkerbojonegoro.top"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-tiktok"></i>Bojonegoro</a
         >
-        <a href="https://www.tiktok.com/@lokergresik.top" class="tbl-biru"
+        <a
+          href="https://www.tiktok.com/@lokergresik.top"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-tiktok"></i>Gresik</a
         >
-        <a href="https://www.tiktok.com/@lokerjembertop" class="tbl-biru"
+        <a
+          href="https://www.tiktok.com/@lokerjembertop"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-tiktok"></i>Jember</a
         >
-        <a href="https://www.tiktok.com/@lokerjombang" class="tbl-biru"
+        <a
+          href="https://www.tiktok.com/@lokerjombang"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-tiktok"></i>Jombang</a
         >
-        <a href="https://www.tiktok.com/@lokerkediri.top" class="tbl-biru"
+        <a
+          href="https://www.tiktok.com/@lokerkediri.top"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-tiktok"></i>Kediri</a
         >
-        <a href="https://www.tiktok.com/@lokerlamongantop" class="tbl-biru"
+        <a
+          href="https://www.tiktok.com/@lokerlamongantop"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-tiktok"></i>Lamongan</a
         >
-        <a href="https://www.tiktok.com/@lokerlumajang.top" class="tbl-biru"
+        <a
+          href="https://www.tiktok.com/@lokerlumajang.top"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-tiktok"></i>Lumajang</a
         >
         <a
           href="https://www.tiktok.com/@infolokermadiun_ig.top"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-tiktok"></i>Madiun</a
         >
-        <a href="https://www.tiktok.com/@loker.mojokertotop" class="tbl-biru"
+        <a
+          href="https://www.tiktok.com/@loker.mojokertotop"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-tiktok"></i>Mojokerto</a
         >
-        <a href="https://www.tiktok.com/@lokernganjuk.top" class="tbl-biru"
+        <a
+          href="https://www.tiktok.com/@lokernganjuk.top"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-tiktok"></i>Nganjuk</a
         >
-        <a href="https://www.tiktok.com/@lokerpasuruan.top" class="tbl-biru"
+        <a
+          href="https://www.tiktok.com/@lokerpasuruan.top"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-tiktok"></i>Pasuruan</a
         >
-        <a href="https://www.tiktok.com/@infolokerponorogo.top" class="tbl-biru"
+        <a
+          href="https://www.tiktok.com/@infolokerponorogo.top"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-tiktok"></i>Ponorogo</a
         >
-        <a href="https://www.tiktok.com/@lokerprobolinggotop" class="tbl-biru"
+        <a
+          href="https://www.tiktok.com/@lokerprobolinggotop"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-tiktok"></i>Probolinggo</a
         >
-        <a href="https://www.tiktok.com/@lokersidoarjotop" class="tbl-biru"
+        <a
+          href="https://www.tiktok.com/@lokersidoarjotop"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-tiktok"></i>Sidoarjo</a
         >
-        <a href="https://www.tiktok.com/@lokertuban.top" class="tbl-biru"
+        <a
+          href="https://www.tiktok.com/@lokertuban.top"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-tiktok"></i>Tuban</a
         >
-        <a href="https://www.tiktok.com/@lokermaduratop2" class="tbl-biru"
+        <a
+          href="https://www.tiktok.com/@lokermaduratop2"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-tiktok"></i>Madura</a
         >
-        <a href="https://www.tiktok.com/@lokermagetantop" class="tbl-biru"
+        <a
+          href="https://www.tiktok.com/@lokermagetantop"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-tiktok"></i>Magetan Ngawi</a
         >
         <a
           href="https://www.tiktok.com/@lokersitubondowoso.top"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-tiktok"></i>Situbondo</a
         >
         <a
           href="https://www.tiktok.com/@lokertrenggalekpacitan"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-tiktok"></i>Trenggalek Pacitan</a
         >
-        <a href="https://www.tiktok.com/@lokermalangbatu.top" class="tbl-biru"
+        <a
+          href="https://www.tiktok.com/@lokermalangbatu.top"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-tiktok"></i>Batu Malang</a
         >
         <a
           href="https://www.tiktok.com/@lowkerblitartulungagung"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-tiktok"></i>Blitar Tulungagung</a
         >
-        <a href="https://www.tiktok.com/@lokersurabaya.top" class="tbl-biru"
+        <a
+          href="https://www.tiktok.com/@lokersurabaya.top"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-tiktok"></i>Surabaya</a
         >
       </main>

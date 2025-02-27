@@ -36,11 +36,31 @@
         padding-top: 0; /* Menambahkan padding-top agar konten tidak menembus navbar */
       }
 
+      section main {
+        display: flex;
+        padding-bottom: 30px;
+      }
+
+      section footer {
+        padding-bottom: 30px;
+      }
+
+      .menu {
+        display: flex;
+        font-family: "Open Sans", sans-serif;
+        color: white;
+        font-weight: 600;
+        font-size: 1em;
+        padding: 8px;
+        margin-left: 40px;
+        text-shadow: 0 0 1px transparent, 0 1px 2px rgba(0, 0, 0, 0.8);
+      }
+
       .logo {
         position: relative;
         display: flex;
         align-items: center;
-        margin-left: auto;
+        margin-right: 20px;
         order: 2;
       }
 
@@ -78,8 +98,8 @@
       .dropdown-menu {
         display: none;
         position: fixed;
-        top: 20px;
-        left: 20px;
+        top: 40px;
+        left: 40px;
         background-color: rgba(0, 0, 0, 0.8);
         border-radius: 8px;
         padding: 10px;
@@ -120,16 +140,35 @@
           padding-top: 0; /* Menambahkan padding-top agar konten tidak menembus navbar */
         }
 
+        section footer {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding-bottom: 60px;
+          width: 100%;
+        }
+
+        .menu {
+          display: flex;
+          font-family: "Open Sans", sans-serif;
+          color: white;
+          font-weight: 600;
+          font-size: 1em;
+          padding: 8px;
+          margin-left: 25px;
+          text-shadow: 0 0 1px transparent, 0 1px 2px rgba(0, 0, 0, 0.8);
+        }
+
         .logo {
           position: relative;
           display: flex;
           align-items: center;
-          margin-left: auto;
+          margin-right: 20px;
           order: 2;
         }
 
         .logo img {
-          padding: 5px;
+          padding: 2px;
           width: 40px;
           height: 40px;
           border-radius: 50%;
@@ -162,8 +201,8 @@
         .dropdown-menu {
           display: none;
           position: fixed;
-          top: 8px;
-          left: 8px;
+          top: 40px;
+          left: 30px;
           background-color: rgba(0, 0, 0, 0.8);
           border-radius: 8px;
           padding: 10px;
@@ -191,8 +230,11 @@
   </head>
   <body>
     <div class="navbar">
-      <div class="hamburger-menu">
-        <i class="fas fa-bars menu-icon"></i>
+      <div class="menu-container">
+        <div class="menu">MENU</div>
+        <div class="hamburger-menu">
+          <i class="fas fa-bars menu-icon"></i>
+        </div>
         <div class="dropdown-menu">
           <a href="../../index.html">Home</a>
           <a href="../nama_prov.html">Daftar Provinsi</a>
@@ -210,165 +252,199 @@
         <a
           href="https://www.facebook.com/groups/1024445944829418"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Klaten</a
         >
         <a
           href="https://www.facebook.com/groups/527252079059400"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Sragen</a
         >
         <a
           href="https://www.facebook.com/groups/1152431835591129"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Purwodadi Grobogan</a
         >
         <a
           href="https://www.facebook.com/groups/1192856658150124"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Pati Rembang</a
         >
         <a
           href="https://www.facebook.com/groups/1180976939336806"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Demak Semarang</a
         >
         <a
           href="https://www.facebook.com/groups/4979130982193955"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Jepara</a
         >
         <a
           href="https://www.facebook.com/groups/710348133456098"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Kendal</a
-        >
-        <a href="https://www.tiktok.com/@lokerpekalongantop" class="tbl-biru"
-          ><i class="fa-brands fa-facebook"></i>Pekalongan</a
         >
         <a
           href="https://www.facebook.com/groups/308230164759969"
           class="tbl-biru"
-          ><i class="fa-brands fa-facebook"></i>Batang</a
+          target="_blank"
+          ><i class="fa-brands fa-facebook"></i>Batang dan Pekalongan</a
         >
         <a
           href="https://www.facebook.com/groups/710384077044887"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Boyolali</a
         >
         <a
           href="https://www.facebook.com/groups/746537393018231"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Ungaran Semarang</a
         >
         <a
           href="https://www.facebook.com/groups/480545167085025"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Cilacap</a
         >
         <a
           href="https://www.facebook.com/groups/501968758241993"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Purwokerto</a
         >
         <a
           href="https://www.facebook.com/groups/499773001823661"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Banjarnegara</a
         >
         <a
           href="https://www.facebook.com/groups/978644786344260"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Purworejo</a
         >
         <a
           href="https://www.facebook.com/groups/565149768194060"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Magelang</a
         >
         <a
           href="https://www.facebook.com/groups/1390389814735809"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Sukoharjo</a
         >
         <a
           href="https://www.facebook.com/groups/556913629076273"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Karanganyar</a
         >
         <a
           href="https://www.facebook.com/groups/728149981536314"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Kudus</a
         >
         <a
           href="https://www.facebook.com/groups/309455537970557"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Pemalang</a
         >
         <a
           href="https://www.facebook.com/groups/1664847670518824"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Temanggung Wonosobo</a
         >
         <a
           href="https://www.facebook.com/groups/1300715597005531"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Brebes Tegal</a
         >
-        <a href="https://www.tiktok.com/@lokertegal.top" class="tbl-biru">
-          <i class="fa-brands fa-facebook"></i>Tegal</a
+        <a
+          href="https://www.tiktok.com/@lokertegal.top"
+          class="tbl-biru"
+          target="_blank"
+          ><i class="fa-brands fa-facebook"></i>Tegal</a
         >
         <a
           href="https://www.facebook.com/groups/682768373055356"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Purbalingga</a
         >
         <a
           href="https://www.facebook.com/groups/1130884031098535"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Wonogiri</a
         >
         <a
           href="https://www.facebook.com/groups/1032949767303555"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Salatiga</a
         >
         <a
           href="https://www.facebook.com/groups/730921247899142"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Semarang</a
         >
         <a
           href="https://www.facebook.com/groups/561658681890902"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Solo</a
         >
         <a
           href="https://www.facebook.com/groups/403820191272565"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Kebumen</a
         >
-        <a href="https://www.tiktok.com/@lokerbanyumastop" class="tbl-biru"
+        <a
+          href="https://www.tiktok.com/@lokerbanyumastop"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Banyumas</a
         >
         <a
           href="https://www.facebook.com/share/g/a5isvHqFCSBY1syW/"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Blora</a
         >
         <a
           href="https://www.facebook.com/share/g/pr9SBTM7w6tM2eeT/"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Jogja</a
         >
         <a
           href="https://www.facebook.com/share/g/uJBSUsQ99FpLgK1a/"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Sleman</a
         >
         <a
           href="https://www.facebook.com/share/g/g9QyAPoUw4JmpXB9/"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Kulon Progo</a
         >
       </main>

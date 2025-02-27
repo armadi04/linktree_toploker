@@ -36,11 +36,31 @@
         padding-top: 0; /* Menambahkan padding-top agar konten tidak menembus navbar */
       }
 
+      section main {
+        display: flex;
+        padding-bottom: 30px;
+      }
+
+      section footer {
+        padding-bottom: 30px;
+      }
+
+      .menu {
+        display: flex;
+        font-family: "Open Sans", sans-serif;
+        color: white;
+        font-weight: 600;
+        font-size: 1em;
+        padding: 8px;
+        margin-left: 40px;
+        text-shadow: 0 0 1px transparent, 0 1px 2px rgba(0, 0, 0, 0.8);
+      }
+
       .logo {
         position: relative;
         display: flex;
         align-items: center;
-        margin-left: auto;
+        margin-right: 20px;
         order: 2;
       }
 
@@ -78,8 +98,8 @@
       .dropdown-menu {
         display: none;
         position: fixed;
-        top: 20px;
-        left: 20px;
+        top: 40px;
+        left: 40px;
         background-color: rgba(0, 0, 0, 0.8);
         border-radius: 8px;
         padding: 10px;
@@ -120,16 +140,35 @@
           padding-top: 0; /* Menambahkan padding-top agar konten tidak menembus navbar */
         }
 
+        section footer {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding-bottom: 60px;
+          width: 100%;
+        }
+
+        .menu {
+          display: flex;
+          font-family: "Open Sans", sans-serif;
+          color: white;
+          font-weight: 600;
+          font-size: 1em;
+          padding: 8px;
+          margin-left: 25px;
+          text-shadow: 0 0 1px transparent, 0 1px 2px rgba(0, 0, 0, 0.8);
+        }
+
         .logo {
           position: relative;
           display: flex;
           align-items: center;
-          margin-left: auto;
+          margin-right: 20px;
           order: 2;
         }
 
         .logo img {
-          padding: 5px;
+          padding: 2px;
           width: 40px;
           height: 40px;
           border-radius: 50%;
@@ -162,8 +201,8 @@
         .dropdown-menu {
           display: none;
           position: fixed;
-          top: 8px;
-          left: 8px;
+          top: 40px;
+          left: 30px;
           background-color: rgba(0, 0, 0, 0.8);
           border-radius: 8px;
           padding: 10px;
@@ -191,8 +230,11 @@
   </head>
   <body>
     <div class="navbar">
-      <div class="hamburger-menu">
-        <i class="fas fa-bars menu-icon"></i>
+      <div class="menu-container">
+        <div class="menu">MENU</div>
+        <div class="hamburger-menu">
+          <i class="fas fa-bars menu-icon"></i>
+        </div>
         <div class="dropdown-menu">
           <a href="../../index.html">Home</a>
           <a href="../nama_prov.html">Daftar Provinsi</a>
@@ -207,97 +249,136 @@
       <main>
         <img src="../../img/Toploker.com.jpeg" alt="Telegram Jateng" />
         <h2>Link akun Telegram wilayah Jawa Tengah</h2>
-        <a href="https://t.me/lokerklatentop" class="tbl-biru"
+        <a href="https://t.me/lokerklatentop" class="tbl-biru" target="_blank"
           ><i class="fa-brands fa-telegram"></i>Klaten</a
         >
-        <a href="https://t.me/lokersragentop" class="tbl-biru"
+        <a href="https://t.me/lokersragentop" class="tbl-biru" target="_blank"
           ><i class="fa-brands fa-telegram"></i>Sragen</a
         >
-        <a href="https://t.me/lokerpurwodadigrobogantop" class="tbl-biru"
+        <a
+          href="https://t.me/lokerpurwodadigrobogantop"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-telegram"></i>Purwodadi Grobogan</a
         >
-        <a href="https://t.me/lokerpatirembangtop" class="tbl-biru"
+        <a
+          href="https://t.me/lokerpatirembangtop"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-telegram"></i>Pati Rembang</a
         >
-        <a href="https://t.me/lokerdemaksemarangtop" class="tbl-biru"
+        <a
+          href="https://t.me/lokerdemaksemarangtop"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-telegram"></i>Demak Semarang</a
         >
-        <a href="https://t.me/lokerjeparatop" class="tbl-biru"
+        <a href="https://t.me/lokerjeparatop" class="tbl-biru" target="_blank"
           ><i class="fa-brands fa-telegram"></i>Jepara</a
         >
-        <a href="https://t.me/lokerkendaltop" class="tbl-biru"
+        <a href="https://t.me/lokerkendaltop" class="tbl-biru" target="_blank"
           ><i class="fa-brands fa-telegram"></i>Kendal</a
         >
-        <a href="https://t.me/lokerbatangpekalongantop" class="tbl-biru"
+        <a
+          href="https://t.me/lokerbatangpekalongantop"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-telegram"></i>Batang Pekalongan</a
         >
-        <a href="https://t.me/lokerboyolalitop" class="tbl-biru"
+        <a href="https://t.me/lokerboyolalitop" class="tbl-biru" target="_blank"
           ><i class="fa-brands fa-telegram"></i>Boyolali</a
         >
-        <a href="https://t.me/lokerungarantop" class="tbl-biru"
+        <a href="https://t.me/lokerungarantop" class="tbl-biru" target="_blank"
           ><i class="fa-brands fa-telegram"></i>Ungaran Semarang</a
         >
-        <a href="https://t.me/lokercilacaptop" class="tbl-biru"
+        <a href="https://t.me/lokercilacaptop" class="tbl-biru" target="_blank"
           ><i class="fa-brands fa-telegram"></i>Cilacap</a
         >
-        <a href="https://t.me/lokerpurwokertotop" class="tbl-biru"
+        <a
+          href="https://t.me/lokerpurwokertotop"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-telegram"></i>Purwokerto</a
         >
-        <a href="https://t.me/lokerbanjarnegaratop" class="tbl-biru"
+        <a
+          href="https://t.me/lokerbanjarnegaratop"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-telegram"></i>Banjarnegara</a
         >
-        <a href="https://t.me/lokerpurworejotop" class="tbl-biru"
+        <a
+          href="https://t.me/lokerpurworejotop"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-telegram"></i>Purworejo</a
         >
-        <a href="https://t.me/lokermagelangtop" class="tbl-biru"
+        <a href="https://t.me/lokermagelangtop" class="tbl-biru" target="_blank"
           ><i class="fa-brands fa-telegram"></i>Magelang</a
         >
-        <a href="https://t.me/lokersukoharjotop" class="tbl-biru"
+        <a
+          href="https://t.me/lokersukoharjotop"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-telegram"></i>Sukoharjo</a
         >
-        <a href="https://t.me/lokerkaranganyartop" class="tbl-biru"
+        <a
+          href="https://t.me/lokerkaranganyartop"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-telegram"></i>Karanganyar</a
         >
-        <a href="https://t.me/lokerkudustop" class="tbl-biru"
+        <a href="https://t.me/lokerkudustop" class="tbl-biru" target="_blank"
           ><i class="fa-brands fa-telegram"></i>Kudus</a
         >
-        <a href="https://t.me/lokerpemalangtop" class="tbl-biru"
+        <a href="https://t.me/lokerpemalangtop" class="tbl-biru" target="_blank"
           ><i class="fa-brands fa-telegram"></i>Pemalang</a
         >
-        <a href="https://t.me/lokertemanggungwonosobotop" class="tbl-biru"
+        <a
+          href="https://t.me/lokertemanggungwonosobotop"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-telegram"></i>Temanggung Wonosobo</a
         >
-        <a href="https://t.me/lokerbrebestegaltop" class="tbl-biru"
+        <a
+          href="https://t.me/lokerbrebestegaltop"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-telegram"></i>Brebes Tegal</a
         >
-        <a href="https://t.me/lokerpurbalinggatop" class="tbl-biru"
+        <a
+          href="https://t.me/lokerpurbalinggatop"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-telegram"></i>Purbalingga</a
         >
-        <a href="https://t.me/lokerwonogiritop" class="tbl-biru"
+        <a href="https://t.me/lokerwonogiritop" class="tbl-biru" target="_blank"
           ><i class="fa-brands fa-telegram"></i>Wonogiri</a
         >
-        <a href="https://t.me/lokersalatigatop" class="tbl-biru"
+        <a href="https://t.me/lokersalatigatop" class="tbl-biru" target="_blank"
           ><i class="fa-brands fa-telegram"></i>Salatiga</a
         >
-        <a href="https://t.me/lokersemarangtop" class="tbl-biru"
+        <a href="https://t.me/lokersemarangtop" class="tbl-biru" target="_blank"
           ><i class="fa-brands fa-telegram"></i>Semarang</a
         >
-        <a href="https://t.me/lokersolotop" class="tbl-biru"
+        <a href="https://t.me/lokersolotop" class="tbl-biru" target="_blank"
           ><i class="fa-brands fa-telegram"></i>Solo</a
         >
-        <a href="https://t.me/lokerkebumentop" class="tbl-biru"
+        <a href="https://t.me/lokerkebumentop" class="tbl-biru" target="_blank"
           ><i class="fa-brands fa-telegram"></i>Kebumen</a
         >
-        <a href="https://t.me/lokerbloratop" class="tbl-biru"
+        <a href="https://t.me/lokerbloratop" class="tbl-biru" target="_blank"
           ><i class="fa-brands fa-telegram"></i>Blora</a
         >
-        <a href="https://t.me/lokerjogjatop" class="tbl-biru"
+        <a href="https://t.me/lokerjogjatop" class="tbl-biru" target="_blank"
           ><i class="fa-brands fa-telegram"></i>Jogja</a
         >
-        <a href="https://t.me/lokerslemantop" class="tbl-biru"
+        <a href="https://t.me/lokerslemantop" class="tbl-biru" target="_blank"
           ><i class="fa-brands fa-telegram"></i>Sleman</a
         >
-        <a href="https://t.me/lokerkulonprogotop" class="tbl-biru"
+        <a
+          href="https://t.me/lokerkulonprogotop"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-telegram"></i>Kulon Progo</a
         >
       </main>

@@ -36,11 +36,31 @@
         padding-top: 0; /* Menambahkan padding-top agar konten tidak menembus navbar */
       }
 
+      section main {
+        display: flex;
+        padding-bottom: 30px;
+      }
+
+      section footer {
+        padding-bottom: 30px;
+      }
+
+      .menu {
+        display: flex;
+        font-family: "Open Sans", sans-serif;
+        color: white;
+        font-weight: 600;
+        font-size: 1em;
+        padding: 8px;
+        margin-left: 40px;
+        text-shadow: 0 0 1px transparent, 0 1px 2px rgba(0, 0, 0, 0.8);
+      }
+
       .logo {
         position: relative;
         display: flex;
         align-items: center;
-        margin-left: auto;
+        margin-right: 20px;
         order: 2;
       }
 
@@ -78,8 +98,8 @@
       .dropdown-menu {
         display: none;
         position: fixed;
-        top: 20px;
-        left: 20px;
+        top: 40px;
+        left: 40px;
         background-color: rgba(0, 0, 0, 0.8);
         border-radius: 8px;
         padding: 10px;
@@ -120,16 +140,35 @@
           padding-top: 0; /* Menambahkan padding-top agar konten tidak menembus navbar */
         }
 
+        section footer {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding-bottom: 60px;
+          width: 100%;
+        }
+
+        .menu {
+          display: flex;
+          font-family: "Open Sans", sans-serif;
+          color: white;
+          font-weight: 600;
+          font-size: 1em;
+          padding: 8px;
+          margin-left: 25px;
+          text-shadow: 0 0 1px transparent, 0 1px 2px rgba(0, 0, 0, 0.8);
+        }
+
         .logo {
           position: relative;
           display: flex;
           align-items: center;
-          margin-left: auto;
+          margin-right: 20px;
           order: 2;
         }
 
         .logo img {
-          padding: 5px;
+          padding: 2px;
           width: 40px;
           height: 40px;
           border-radius: 50%;
@@ -162,8 +201,8 @@
         .dropdown-menu {
           display: none;
           position: fixed;
-          top: 8px;
-          left: 8px;
+          top: 40px;
+          left: 30px;
           background-color: rgba(0, 0, 0, 0.8);
           border-radius: 8px;
           padding: 10px;
@@ -191,8 +230,11 @@
   </head>
   <body>
     <div class="navbar">
-      <div class="hamburger-menu">
-        <i class="fas fa-bars menu-icon"></i>
+      <div class="menu-container">
+        <div class="menu">MENU</div>
+        <div class="hamburger-menu">
+          <i class="fas fa-bars menu-icon"></i>
+        </div>
         <div class="dropdown-menu">
           <a href="../../index.html">Home</a>
           <a href="../nama_prov.html">Daftar Provinsi</a>
@@ -210,101 +252,145 @@
         <a
           href="https://www.facebook.com/groups/3358229264408458"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Jakarta</a
         >
         <a
           href="https://www.facebook.com/groups/1660890917588899"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Bogor</a
         >
         <a
           href="https://www.facebook.com/groups/405166298283369"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Bandung</a
         >
         <a
           href="https://www.facebook.com/groups/839745817204490"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Bekasi</a
         >
         <a
           href="https://www.facebook.com/groups/684150016139423"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Depok</a
         >
         <a
           href="https://www.facebook.com/groups/526693932458666"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Garut</a
         >
         <a
           href="https://www.facebook.com/groups/528465005405187"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Sukabumi</a
         >
         <a
           href="https://www.facebook.com/groups/685574016031819"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Karawang</a
         >
         <a
           href="https://www.facebook.com/groups/748425776318376"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Cianjur</a
         >
         <a
           href="https://www.facebook.com/groups/491963676008945"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Cirebon</a
         >
         <a
           href="https://www.facebook.com/groups/546403430425655"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Sumedang</a
         >
         <a
           href="https://www.facebook.com/groups/1359992264467291"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Subang</a
         >
         <a
           href="https://www.facebook.com/groups/556099235926297"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Purwakarta</a
         >
         <a
           href="https://www.facebook.com/groups/1934472440220906"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Majalengka</a
         >
-        <a href="https://www.facebook.com/share/g/1DauVQydaY/" class="tbl-biru"
+        <a
+          href="https://www.facebook.com/share/g/1DauVQydaY/"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Ciamis</a
         >
-        <a href="https://www.facebook.com/share/g/15k19qU2XH/" class="tbl-biru"
+        <a
+          href="https://www.facebook.com/share/g/15k19qU2XH/"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Indramayu</a
         >
-        <a href="https://www.facebook.com/share/g/1Grmp9o6Uh/" class="tbl-biru"
+        <a
+          href="https://www.facebook.com/share/g/1Grmp9o6Uh/"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Kuningan</a
         >
-        <a href="https://www.facebook.com/share/g/1AQuizU6ze/" class="tbl-biru"
+        <a
+          href="https://www.facebook.com/share/g/1AQuizU6ze/"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Cimahi</a
         >
-        <a href="https://www.facebook.com/share/g/1Hc1uM5hdK/" class="tbl-biru"
+        <a
+          href="https://www.facebook.com/share/g/1Hc1uM5hdK/"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Tasikmalaya</a
         >
-        <a href="https://www.facebook.com/share/g/18qGe64vPd/" class="tbl-biru"
+        <a
+          href="https://www.facebook.com/share/g/18qGe64vPd/"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Tangerang</a
         >
-        <a href="https://www.facebook.com/share/g/1GhBdVPY7Y/" class="tbl-biru"
+        <a
+          href="https://www.facebook.com/share/g/1GhBdVPY7Y/"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Cilegon</a
         >
-        <a href="https://www.facebook.com/share/g/1DjEeacyeJ/" class="tbl-biru"
+        <a
+          href="https://www.facebook.com/share/g/1DjEeacyeJ/"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Serang</a
         >
-        <a href="https://www.facebook.com/share/g/1YAKNWCthN/" class="tbl-biru"
+        <a
+          href="https://www.facebook.com/share/g/1YAKNWCthN/"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Banten</a
         >
-        <a href="https://www.facebook.com/share/g/15VattvMXA/" class="tbl-biru"
+        <a
+          href="https://www.facebook.com/share/g/15VattvMXA/"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Pangandaran</a
         >
       </main>

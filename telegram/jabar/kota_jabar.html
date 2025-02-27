@@ -36,11 +36,31 @@
         padding-top: 0; /* Menambahkan padding-top agar konten tidak menembus navbar */
       }
 
+      section main {
+        display: flex;
+        padding-bottom: 30px;
+      }
+
+      section footer {
+        padding-bottom: 30px;
+      }
+
+      .menu {
+        display: flex;
+        font-family: "Open Sans", sans-serif;
+        color: white;
+        font-weight: 600;
+        font-size: 1em;
+        padding: 8px;
+        margin-left: 40px;
+        text-shadow: 0 0 1px transparent, 0 1px 2px rgba(0, 0, 0, 0.8);
+      }
+
       .logo {
         position: relative;
         display: flex;
         align-items: center;
-        margin-left: auto;
+        margin-right: 20px;
         order: 2;
       }
 
@@ -78,8 +98,8 @@
       .dropdown-menu {
         display: none;
         position: fixed;
-        top: 20px;
-        left: 20px;
+        top: 40px;
+        left: 40px;
         background-color: rgba(0, 0, 0, 0.8);
         border-radius: 8px;
         padding: 10px;
@@ -120,16 +140,35 @@
           padding-top: 0; /* Menambahkan padding-top agar konten tidak menembus navbar */
         }
 
+        section footer {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding-bottom: 60px;
+          width: 100%;
+        }
+
+        .menu {
+          display: flex;
+          font-family: "Open Sans", sans-serif;
+          color: white;
+          font-weight: 600;
+          font-size: 1em;
+          padding: 8px;
+          margin-left: 25px;
+          text-shadow: 0 0 1px transparent, 0 1px 2px rgba(0, 0, 0, 0.8);
+        }
+
         .logo {
           position: relative;
           display: flex;
           align-items: center;
-          margin-left: auto;
+          margin-right: 20px;
           order: 2;
         }
 
         .logo img {
-          padding: 5px;
+          padding: 2px;
           width: 40px;
           height: 40px;
           border-radius: 50%;
@@ -162,8 +201,8 @@
         .dropdown-menu {
           display: none;
           position: fixed;
-          top: 8px;
-          left: 8px;
+          top: 40px;
+          left: 30px;
           background-color: rgba(0, 0, 0, 0.8);
           border-radius: 8px;
           padding: 10px;
@@ -191,8 +230,11 @@
   </head>
   <body>
     <div class="navbar">
-      <div class="hamburger-menu">
-        <i class="fas fa-bars menu-icon"></i>
+      <div class="menu-container">
+        <div class="menu">MENU</div>
+        <div class="hamburger-menu">
+          <i class="fas fa-bars menu-icon"></i>
+        </div>
         <div class="dropdown-menu">
           <a href="../../index.html">Home</a>
           <a href="../nama_prov.html">Daftar Provinsi</a>
@@ -207,76 +249,94 @@
       <main>
         <img src="../../img/Toploker.com.jpeg" alt="Telegram Jabar" />
         <h2>Link akun Telegram wilayah Jawa Barat</h2>
-        <a href="https://t.me/lokerjakartatop" class="tbl-biru"
+        <a href="https://t.me/lokerjakartatop" class="tbl-biru" target="_blank"
           ><i class="fa-brands fa-telegram"></i>Jakarta</a
         >
-        <a href="https://t.me/lokerbogortop" class="tbl-biru"
+        <a href="https://t.me/lokerbogortop" class="tbl-biru" target="_blank"
           ><i class="fa-brands fa-telegram"></i>Bogor</a
         >
-        <a href="https://t.me/lokerbandungtop" class="tbl-biru"
+        <a href="https://t.me/lokerbandungtop" class="tbl-biru" target="_blank"
           ><i class="fa-brands fa-telegram"></i>Bandung</a
         >
-        <a href="https://t.me/lokerbekasitop" class="tbl-biru"
+        <a href="https://t.me/lokerbekasitop" class="tbl-biru" target="_blank"
           ><i class="fa-brands fa-telegram"></i>Bekasi</a
         >
-        <a href="https://t.me/lokerdepoktop" class="tbl-biru"
+        <a href="https://t.me/lokerdepoktop" class="tbl-biru" target="_blank"
           ><i class="fa-brands fa-telegram"></i>Depok</a
         >
-        <a href="https://t.me/lokergaruttop" class="tbl-biru"
+        <a href="https://t.me/lokergaruttop" class="tbl-biru" target="_blank"
           ><i class="fa-brands fa-telegram"></i>Garut</a
         >
-        <a href="https://t.me/lokersukabumitop" class="tbl-biru"
+        <a href="https://t.me/lokersukabumitop" class="tbl-biru" target="_blank"
           ><i class="fa-brands fa-telegram"></i>Sukabumi</a
         >
-        <a href="https://t.me/lokerkarawangtop" class="tbl-biru"
+        <a href="https://t.me/lokerkarawangtop" class="tbl-biru" target="_blank"
           ><i class="fa-brands fa-telegram"></i>Karawang</a
         >
-        <a href="https://t.me/lokercianjurtop" class="tbl-biru"
+        <a href="https://t.me/lokercianjurtop" class="tbl-biru" target="_blank"
           ><i class="fa-brands fa-telegram"></i>Cianjur</a
         >
-        <a href="https://t.me/lokercirebontop" class="tbl-biru"
+        <a href="https://t.me/lokercirebontop" class="tbl-biru" target="_blank"
           ><i class="fa-brands fa-telegram"></i>Cirebon</a
         >
-        <a href="https://t.me/lokersumedangtop" class="tbl-biru"
+        <a href="https://t.me/lokersumedangtop" class="tbl-biru" target="_blank"
           ><i class="fa-brands fa-telegram"></i>Sumedang</a
         >
-        <a href="https://t.me/lokersubangtop" class="tbl-biru"
+        <a href="https://t.me/lokersubangtop" class="tbl-biru" target="_blank"
           ><i class="fa-brands fa-telegram"></i>Subang</a
         >
-        <a href="https://t.me/lokerpurwakartatop" class="tbl-biru"
+        <a
+          href="https://t.me/lokerpurwakartatop"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-telegram"></i>Purwakarta</a
         >
-        <a href="https://t.me/lokermajalengkatop" class="tbl-biru"
+        <a
+          href="https://t.me/lokermajalengkatop"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-telegram"></i>Majalengka</a
         >
-        <a href="https://t.me/lokerciamistop" class="tbl-biru"
+        <a href="https://t.me/lokerciamistop" class="tbl-biru" target="_blank"
           ><i class="fa-brands fa-telegram"></i>Ciamis</a
         >
-        <a href="https://t.me/lokerindramayutop" class="tbl-biru"
+        <a
+          href="https://t.me/lokerindramayutop"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-telegram"></i>Indramayu</a
         >
-        <a href="https://t.me/lokerkuningantop" class="tbl-biru"
+        <a href="https://t.me/lokerkuningantop" class="tbl-biru" target="_blank"
           ><i class="fa-brands fa-telegram"></i>Kuningan</a
         >
-        <a href="https://t.me/lokercimahitop" class="tbl-biru"
+        <a href="https://t.me/lokercimahitop" class="tbl-biru" target="_blank"
           ><i class="fa-brands fa-telegram"></i>Cimahi</a
         >
-        <a href="https://t.me/lokertasikmalayatop" class="tbl-biru"
+        <a
+          href="https://t.me/lokertasikmalayatop"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-telegram"></i>Tasikmalaya</a
         >
-        <a href="https://t.me/lokertangerangtop" class="tbl-biru"
+        <a
+          href="https://t.me/lokertangerangtop"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-telegram"></i>Tangerang</a
         >
-        <a href="https://t.me/lokercilegontop" class="tbl-biru"
+        <a href="https://t.me/lokercilegontop" class="tbl-biru" target="_blank"
           ><i class="fa-brands fa-telegram"></i>Cilegon</a
         >
-        <a href="https://t.me/lokerserangtop" class="tbl-biru"
+        <a href="https://t.me/lokerserangtop" class="tbl-biru" target="_blank"
           ><i class="fa-brands fa-telegram"></i>Serang</a
         >
-        <a href="https://t.me/lokerbantentop" class="tbl-biru"
+        <a href="https://t.me/lokerbantentop" class="tbl-biru" target="_blank"
           ><i class="fa-brands fa-telegram"></i>Banten</a
         >
-        <a href="https://t.me/lokerpangandarantop" class="tbl-biru"
+        <a
+          href="https://t.me/lokerpangandarantop"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-telegram"></i>Pangandaran</a
         >
       </main>

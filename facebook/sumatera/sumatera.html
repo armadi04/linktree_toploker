@@ -36,11 +36,31 @@
         padding-top: 0; /* Menambahkan padding-top agar konten tidak menembus navbar */
       }
 
+      section main {
+        display: flex;
+        padding-bottom: 30px;
+      }
+
+      section footer {
+        padding-bottom: 30px;
+      }
+
+      .menu {
+        display: flex;
+        font-family: "Open Sans", sans-serif;
+        color: white;
+        font-weight: 600;
+        font-size: 1em;
+        padding: 8px;
+        margin-left: 40px;
+        text-shadow: 0 0 1px transparent, 0 1px 2px rgba(0, 0, 0, 0.8);
+      }
+
       .logo {
         position: relative;
         display: flex;
         align-items: center;
-        margin-left: auto;
+        margin-right: 20px;
         order: 2;
       }
 
@@ -78,8 +98,8 @@
       .dropdown-menu {
         display: none;
         position: fixed;
-        top: 20px;
-        left: 20px;
+        top: 40px;
+        left: 40px;
         background-color: rgba(0, 0, 0, 0.8);
         border-radius: 8px;
         padding: 10px;
@@ -120,16 +140,35 @@
           padding-top: 0; /* Menambahkan padding-top agar konten tidak menembus navbar */
         }
 
+        section footer {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding-bottom: 60px;
+          width: 100%;
+        }
+
+        .menu {
+          display: flex;
+          font-family: "Open Sans", sans-serif;
+          color: white;
+          font-weight: 600;
+          font-size: 1em;
+          padding: 8px;
+          margin-left: 25px;
+          text-shadow: 0 0 1px transparent, 0 1px 2px rgba(0, 0, 0, 0.8);
+        }
+
         .logo {
           position: relative;
           display: flex;
           align-items: center;
-          margin-left: auto;
+          margin-right: 20px;
           order: 2;
         }
 
         .logo img {
-          padding: 5px;
+          padding: 2px;
           width: 40px;
           height: 40px;
           border-radius: 50%;
@@ -162,8 +201,8 @@
         .dropdown-menu {
           display: none;
           position: fixed;
-          top: 8px;
-          left: 8px;
+          top: 40px;
+          left: 30px;
           background-color: rgba(0, 0, 0, 0.8);
           border-radius: 8px;
           padding: 10px;
@@ -191,8 +230,11 @@
   </head>
   <body>
     <div class="navbar">
-      <div class="hamburger-menu">
-        <i class="fas fa-bars menu-icon"></i>
+      <div class="menu-container">
+        <div class="menu">MENU</div>
+        <div class="hamburger-menu">
+          <i class="fas fa-bars menu-icon"></i>
+        </div>
         <div class="dropdown-menu">
           <a href="../../index.html">Home</a>
           <a href="../nama_prov.html">Daftar Provinsi</a>
@@ -210,94 +252,115 @@
         <a
           href="https://www.facebook.com/groups/757682065232223"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Sumatera Barat</a
         >
         <a
           href="https://www.facebook.com/groups/703524477392861"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Padang</a
         >
         <a
           href="https://www.facebook.com/groups/580493673414686"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Bukittinggi</a
         >
         <a
           href="https://www.facebook.com/groups/350180200564518"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Dharmasraya dan Solok</a
         >
         <a
           href="https://www.facebook.com/groups/400506062116901"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Payakumbuh</a
         >
-        <a href="https://instagram.com/lokersumsel.top" class="tbl-biru"
+        <a
+          href="https://instagram.com/lokersumsel.top"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Sumatera Selatan</a
         >
         <a
           href="https://www.facebook.com/groups/767133414279321"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Palembang</a
         >
         <a
           href="https://www.facebook.com/groups/1740328523011439"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Muara Enim dan Lahat</a
         >
         <a
           href="https://www.facebook.com/groups/1311420542679489"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Lampung</a
         >
         <a
           href="https://www.facebook.com/groups/726949595293161"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Bandar Lampung</a
         >
         <a
           href="https://www.facebook.com/groups/312355427771740"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Metro Lampung</a
         >
         <a
           href="https://www.facebook.com/groups/402430018302028"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Bengkulu</a
         >
         <a
           href="https://www.facebook.com/groups/716890652859534"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Bungo Bangko</a
         >
         <a
           href="https://www.facebook.com/groups/770331627461572"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Jambi</a
         >
         <a
           href="https://www.facebook.com/groups/1004251290458489"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Sumatera Utara</a
         >
         <a
           href="https://www.facebook.com/groups/1417127262137662"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Medan</a
         >
         <a
           href="https://www.facebook.com/groups/745682933449851"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Labuhan Batu</a
         >
         <a
           href="https://www.facebook.com/groups/749163759445915"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Aceh</a
         >
         <a
           href="https://www.facebook.com/groups/985550516055035"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-facebook"></i>Banda Aceh</a
         >
       </main>

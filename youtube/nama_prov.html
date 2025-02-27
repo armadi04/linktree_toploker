@@ -36,11 +36,31 @@
         padding-top: 0; /* Menambahkan padding-top agar konten tidak menembus navbar */
       }
 
+      section main {
+        display: flex;
+        padding-bottom: 30px;
+      }
+
+      section footer {
+        padding-bottom: 30px;
+      }
+
+      .menu {
+        display: flex;
+        font-family: "Open Sans", sans-serif;
+        color: white;
+        font-weight: 600;
+        font-size: 1em;
+        padding: 8px;
+        margin-left: 40px;
+        text-shadow: 0 0 1px transparent, 0 1px 2px rgba(0, 0, 0, 0.8);
+      }
+
       .logo {
         position: relative;
         display: flex;
         align-items: center;
-        margin-left: auto;
+        margin-right: 20px;
         order: 2;
       }
 
@@ -78,8 +98,8 @@
       .dropdown-menu {
         display: none;
         position: fixed;
-        top: 20px;
-        left: 20px;
+        top: 40px;
+        left: 40px;
         background-color: rgba(0, 0, 0, 0.8);
         border-radius: 8px;
         padding: 10px;
@@ -120,16 +140,35 @@
           padding-top: 0; /* Menambahkan padding-top agar konten tidak menembus navbar */
         }
 
+        section footer {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding-bottom: 60px;
+          width: 100%;
+        }
+
+        .menu {
+          display: flex;
+          font-family: "Open Sans", sans-serif;
+          color: white;
+          font-weight: 600;
+          font-size: 1em;
+          padding: 8px;
+          margin-left: 25px;
+          text-shadow: 0 0 1px transparent, 0 1px 2px rgba(0, 0, 0, 0.8);
+        }
+
         .logo {
           position: relative;
           display: flex;
           align-items: center;
-          margin-left: auto;
+          margin-right: 20px;
           order: 2;
         }
 
         .logo img {
-          padding: 5px;
+          padding: 2px;
           width: 40px;
           height: 40px;
           border-radius: 50%;
@@ -162,8 +201,8 @@
         .dropdown-menu {
           display: none;
           position: fixed;
-          top: 8px;
-          left: 8px;
+          top: 40px;
+          left: 30px;
           background-color: rgba(0, 0, 0, 0.8);
           border-radius: 8px;
           padding: 10px;
@@ -191,8 +230,11 @@
   </head>
   <body>
     <div class="navbar">
-      <div class="hamburger-menu">
-        <i class="fas fa-bars menu-icon"></i>
+      <div class="menu-container">
+        <div class="menu">MENU</div>
+        <div class="hamburger-menu">
+          <i class="fas fa-bars menu-icon"></i>
+        </div>
         <div class="dropdown-menu">
           <a href="../index.html">Home</a>
           <a href="nama_prov.html">Daftar Provinsi</a>
@@ -207,81 +249,130 @@
       <main>
         <img src="../img/Toploker.com.jpeg" alt="Toploker.com" />
         <h2>Link akun Youtube seluruh Provinsi</h2>
-        <a href="https://www.youtube.com/@LowonganKerjaTop" class="tbl-biru"
+        <a
+          href="https://www.youtube.com/@LowonganKerjaTop"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-youtube"></i>Indonesia</a
         >
-        <a href="https://www.youtube.com/@lokerjawabarat-oy6wl" class="tbl-biru"
+        <a
+          href="https://www.youtube.com/@lokerjawabarat-oy6wl"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-youtube"></i>Jawa Barat</a
         >
-        <a href="https://www.youtube.com/@lokerjawatengah" class="tbl-biru"
+        <a
+          href="https://www.youtube.com/@lokerjawatengah"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-youtube"></i>Jawa Tengah</a
         >
-        <a href="https://www.youtube.com/@lokerjawatimur-m3i" class="tbl-biru"
+        <a
+          href="https://www.youtube.com/@lokerjawatimur-m3i"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-youtube"></i>Jawa Timur</a
         >
-        <a href="https://www.youtube.com/@lokerkalimantantimur" class="tbl-biru"
+        <a
+          href="https://www.youtube.com/@lokerkalimantantimur"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-youtube"></i>Kalimantan Timur</a
         >
         <a
           href="https://www.youtube.com/@lokerkalimantantengah"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-youtube"></i>Kalimantan Tengah</a
         >
         <a
           href="https://www.youtube.com/@lokerkalimantanselatan"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-youtube"></i>Kalimantan Selatan</a
         >
         <a
           href="https://www.youtube.com/@lokertopkalimantanbarat"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-youtube"></i>Kalimantan Barat</a
         >
         <a
           href="https://www.youtube.com/@lokertopkalimantanutara"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-youtube"></i>Kalimantan Utara
         </a>
         <a
           href="https://www.youtube.com/@toplokersumaterabarat"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-youtube"></i>Sumatera Barat</a
         >
-        <a href="https://www.youtube.com/@lokersumateraselatan" class="tbl-biru"
+        <a
+          href="https://www.youtube.com/@lokersumateraselatan"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-youtube"></i>Sumatera Selatan</a
         >
-        <a href="https://www.youtube.com/@lokersumaterautara" class="tbl-biru"
+        <a
+          href="https://www.youtube.com/@lokersumaterautara"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-youtube"></i>Sumatera Utara</a
         >
-        <a href="https://www.youtube.com/@lokerntt-p9r" class="tbl-biru"
+        <a
+          href="https://www.youtube.com/@lokerntt-p9r"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-youtube"></i>NTT</a
         >
-        <a href="https://www.youtube.com/@lokerntb-l7w" class="tbl-biru"
+        <a
+          href="https://www.youtube.com/@lokerntb-l7w"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-youtube"></i>NTB</a
         >
-        <a href="https://www.youtube.com/@lowongankerjatopbali" class="tbl-biru"
+        <a
+          href="https://www.youtube.com/@lowongankerjatopbali"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-youtube"></i>Bali</a
         >
-        <a href="https://www.youtube.com/@lokersulawesiselatan" class="tbl-biru"
+        <a
+          href="https://www.youtube.com/@lokersulawesiselatan"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-youtube"></i>Sulawesi Selatan</a
         >
         <a
           href="https://www.youtube.com/@lokersulawesitenggara2"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-youtube"></i>Sulawesi Tenggara</a
         >
         <a
           href="https://www.youtube.com/@lokersulawesitengah-j2k"
           class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-youtube"></i>Sulawesi Tengah</a
         >
-        <a href="https://www.youtube.com/@lokersulawesiutara" class="tbl-biru"
+        <a
+          href="https://www.youtube.com/@lokersulawesiutara"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-youtube"></i>Sulawesi Utara</a
         >
-        <a href="https://www.youtube.com/@lokerpapua" class="tbl-biru"
+        <a
+          href="https://www.youtube.com/@lokerpapua"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-youtube"></i>Papua</a
         >
-        <a href="https://www.youtube.com/@lokermaluku" class="tbl-biru"
+        <a
+          href="https://www.youtube.com/@lokermaluku"
+          class="tbl-biru"
+          target="_blank"
           ><i class="fa-brands fa-youtube"></i>Maluku</a
         >
       </main>
