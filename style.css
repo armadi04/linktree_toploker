@@ -313,13 +313,14 @@ section.menu-active {
   }
 
   .dropdown-menu {
-    background: #ff6b07;
+    /* background: #ff6b07; */
     display: none;
     position: fixed;
     top: 45px;
     left: 0;
     width: 100%;
     /* background-color: rgba(0, 0, 0, 0.8); */
+    background-color: #1a0868;
     padding: 0;
     margin: 0;
     z-index: 99;
@@ -332,6 +333,7 @@ section.menu-active {
 
   .dropdown-menu.show {
     display: flex;
+    transition: all 0.5s ease;
   }
 
   .dropdown-menu a {
@@ -349,9 +351,11 @@ section.menu-active {
   }
 
   .dropdown-menu a.tbl-ungu {
-    background: #ff6b07;
+    /* background: #ff6b07; */
+    background: #1a0868;
+    color: #ffffff;
     margin: 0;
-    padding: 5px 15px;
+    padding: 6px 15px;
     border-radius: 5px;
     transition: all 0.3s ease; /* Tambahkan transisi */
   }
